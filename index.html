@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Scholarships — Bangladesh CS/AI — Sep 28, 2026</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+<div class="hero-inner">
+<div class="eyebrow">BANGLADESH • BACHELOR • CS / AI / CYBER • NO IELTS • 28 SEP 2026</div>
+<h1>Global Bachelor Scholarships</h1>
+<p class="sub">25+ verified routes + full world check. Scholarship English is different from university English — both shown.</p>
+<div class="stats" id="stats"></div>
+</div>
+</header>
+<div class="toolbar-wrap">
+<div class="toolbar">
+<input id="q" type="search" placeholder="Search country, scholarship, CS program...">
+<select id="fRegion"><option value="">All regions</option><option>Asia</option><option>Middle East</option><option>Europe</option><option>Africa</option><option>Americas</option><option>Oceania</option></select>
+<select id="fStatus"><option value="">All status</option><option>OPEN NOW</option><option>OPENING SOON</option><option>EXPECTED</option><option>CLOSED</option></select>
+<select id="fEnglish"><option value="">All English routes</option><option>No IELTS</option><option>Duolingo</option><option>MOI</option><option>University test</option><option>Program dependent</option><option>Mandatory</option></select>
+<select id="fFund"><option value="">All funding</option><option>Full</option><option>Partial</option><option>Self-pay</option></select>
+</div>
+</div>
+<main>
+<section class="panel"><h2>Open now — apply this week</h2><div id="openNow" class="cards"></div></section>
+<section class="panel"><h2>All scholarships — filter above</h2><div id="grid" class="cards"></div><div id="empty" class="empty" hidden>No match. Clear filters.</div></section>
+<section class="panel"><h2>Passed deadline — closed but reopening</h2><div class="table-wrap"><table><thead><tr><th>Scholarship</th><th>2026 deadline passed</th><th>Next expected</th></tr></thead><tbody id="closedBody"></tbody></table></div></section>
+<section class="panel"><h2>Country-by-country — full world check</h2><div id="countries"></div></section>
+<section class="panel two"><div><h2>Monthly calendar</h2><ul class="cal"><li><b>Sep 2026:</b> GKS to 30 Sep, Saudi to 6 Oct, Pearson nom to 9 Oct, UBC + USA start</li><li><b>Oct 2026:</b> GKS Univ to 31 Oct, UBC Scholars to 15 Nov, Russia opens</li><li><b>Nov 2026:</b> Hungary opens, NL opens 1 Nov, USA Early, UBC 15 Nov / 1 Dec</li><li><b>Dec 2026:</b> Brunei mid-Dec, CSC 15 Dec, ICDF 1 Dec, USA Regular</li><li><b>Jan 2027:</b> Hungary to 15 Jan, Russia to 15 Jan, Turkey opens 10 Jan</li><li><b>Feb–Mar 2027:</b> Turkey, KNB, ICCR, Romania, Azerbaijan, Kazakhstan, QU, HBKU</li><li><b>Apr–Jul 2027:</b> CSC-B, MOE Taiwan, MEXT exam Jul, Turkey interviews</li></ul></div><div><h2>Checklist</h2><h3>Required now</h3><ul><li>Passport, SSC + HSC attested, birth cert, photos</li><li>2 recommendations, study plan 500-800w, CV, MOI</li><li>Duolingo 120-125 if DET route, medical + police where needed</li></ul><h3>Later / some countries</h3><ul><li>BD MoE / HCI / Embassy nominations, CSCA, SAT 1000-1200</li><li>Financial proof USA I-20, Rs500k insurance ICCR, apostille + Arabic for Egypt</li><li>IELTS 5.0-6.5 only if targeting Brunei Azerbaijan Singapore UAE Qatar UK</li></ul></div></section>
+<section class="panel"><h2>Official links</h2><ul class="links"><li><a href="https://www.studyinkorea.go.kr" target="_blank" rel="noopener">studyinkorea.go.kr — GKS-U</a></li><li><a href="https://studyinsaudi.sa/en" target="_blank" rel="noopener">studyinsaudi.sa — Saudi</a></li><li><a href="https://future.utoronto.ca/pearson-scholarships" target="_blank" rel="noopener">Pearson Toronto</a></li><li><a href="https://you.ubc.ca" target="_blank" rel="noopener">UBC Scholars</a></li><li><a href="https://studyinchina.csc.edu.cn" target="_blank" rel="noopener">CSC China</a></li><li><a href="https://a2ascholarships.iccr.gov.in" target="_blank" rel="noopener">ICCR India</a></li><li><a href="https://turkiyeburslari.gov.tr" target="_blank" rel="noopener">Turkiye Burslari</a></li><li><a href="https://stipendiumhungaricum.hu/apply/" target="_blank" rel="noopener">Stipendium Hungaricum</a></li><li><a href="https://scholarships.studyinromania.gov.ro" target="_blank" rel="noopener">Romania MFA</a></li><li><a href="https://education-in-russia.com" target="_blank" rel="noopener">Russia Quota</a></li><li><a href="https://knb.kemdiktisaintek.go.id" target="_blank" rel="noopener">KNB Indonesia</a></li></ul>
+<p class="note">Run locally: double-click index.html or run: python -m http.server 8000 then open http://localhost:8000</p></section>
+</main>
+<footer>Built for Bangladesh HSC CS/AI no-IELTS profile. Expected = pattern, verify call PDF. Web view also saved in OpenSEO report.</footer>
+<script src="app.js"></script>
+</body>
+</html>

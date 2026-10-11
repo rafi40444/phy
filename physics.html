@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physics-I · Dark Study Notes</title>
+  <link rel="stylesheet" href="physics.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">NORTH WESTERN UNIVERSITY, KHULNA · PHYSICS-I</p>
+      <h1>Mid-Semester Questions &amp; Answers</h1>
+      <p class="subtitle">Spring 2025 and Spring 2026 · Marks-appropriate solutions</p>
+    </div>
+  </header>
+
+  <nav class="toc-bar" aria-label="Document navigation">
+    <div class="toc-inner">
+      <a href="#answers">Answers</a>
+      <a href="#spring-2025-examination">Spring 2025</a>
+      <a href="#spring-2026-examination">Spring 2026</a>
+      <a href="visual_answers.html">Visual Cards</a>
+      <a href="supplied_answers.html">Image Answers</a>
+      <a href="final_answers.html">Final 14 Cards</a>
+      <a class="download" href="physics_mid_semester_questions.md" download>Download Markdown</a>
+    </div>
+  </nav>
+
+  <main id="document" class="document" aria-live="polite">
+    <p class="loading">Loading the Markdown document…</p>
+  </main>
+
+  <footer>Physics-I study notes · Open the Markdown file for the source version.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const documentRoot = document.getElementById('document');
+    fetch('physics_mid_semester_questions.md')
+      .then(response => {
+        if (!response.ok) throw new Error('Could not load the Markdown file.');
+        return response.text();
+      })
+      .then(markdown => {
+        documentRoot.innerHTML = marked.parse(markdown, { mangle: false, headerIds: true });
+        if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+        else window.addEventListener('load', () => window.MathJax && MathJax.typesetPromise());
+      })
+      .catch(error => {
+        documentRoot.innerHTML = '<p class="error">' + error.message + '<br>Run <code>python -m http.server 8000</code> in this folder, then open <code>http://localhost:8000/physics.html</code>.</p>';
+      });
+  </script>
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</body>
+</html>
